@@ -167,14 +167,12 @@ var hash = '';
                 var scrollerPos = $('#scroller').offset();
                 if(scrollerPos.left < 0) {
                     $('#scroller').animate({left: 0}, 400, function() {
-                        setTimeout(function(){
-                            $(window).scrollTo(page.y, 400, {axis: 'y'});
-                        }, 100);
+                        //$(window).scrollTo(page.y, 400, {axis: 'y'});
+                        $('html, body').stop().animate({ top: page.y }, 400);
                     });
                 } else {
-                    setTimeout(function(){
-                        $(window).scrollTo(page.y, 400, {axis: 'y'});
-                    }, 100);
+                    //$(window).scrollTo(page.y, 400, {axis: 'y'});
+                    $('html, body').stop().animate({ top: page.y }, 400);
                 }
                 setScrollHeight();
             }
