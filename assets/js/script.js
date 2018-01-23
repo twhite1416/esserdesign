@@ -12,7 +12,7 @@ var hash = '';
 (function($) {
     $.edSite = function(element, options) {
         var defaults = {
-            baseURL: "https://" + window.location.host,
+            baseURL: "http://" + window.location.host,
             assetsURL: '/assets',
             page: {},
             mainHeight: 0,
@@ -40,7 +40,7 @@ var hash = '';
             //Make primary nav hashable
             $('#navigation a').each(function() {
                 var static_url = $(this).attr('href');
-                if(static_url.indexOf('https') == -1) {
+                if(static_url.indexOf('http') == -1) {
                     $(this).attr('href', '#!/' + static_url.substr(1));
                 }
             });
@@ -179,13 +179,13 @@ var hash = '';
         //Navigation
         site.navigation = function() {
             //ANCHOR NAV
-            $('#header h1 a').click(function(e) {
+            $('#header h1 a').on('click',function(e) {
                 e.preventDefault();
                 updateHash('#!/home');
                 return false;
             });
 
-            $('#header li a, .article h1 a').click(function(e) {
+            $('#header li a, .article h1 a').on('click',function(e) {
                 e.preventDefault();
                 $('#main .article').each(function() {
                     if($(this).hasClass('active')) {
