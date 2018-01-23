@@ -29,9 +29,9 @@ var hash = '';
         site.init = function() {
 
             // Detect IE 10 and put a class on the body tag - IE 10 does not support conditional HTML comments
-            if(jQuery.browser.msie && jQuery.browser.version.indexOf('10.') == 0) {// && jQuery.browser.version == '10') {
-                jQuery('body').addClass('browser-ie10');
-            }
+            // if(jQuery.browser.msie && jQuery.browser.version.indexOf('10.') == 0) {// && jQuery.browser.version == '10') {
+            //     jQuery('body').addClass('browser-ie10');
+            // }
 
             site.windowControls();
             //Collect Settings & Defaults
@@ -124,8 +124,6 @@ var hash = '';
 
             // Always hide the samples navigation if we navigate to any other section
             if(page.main != 3) $('#samples > header,#samples > .pieceHeader').fadeOut(300);
-
-            console.log(page.main);
 
             if(page.main == 3) {
                 if(site.settings.currentMain != 3) {
