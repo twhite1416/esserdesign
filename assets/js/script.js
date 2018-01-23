@@ -163,18 +163,15 @@ var hash = '';
                 });
                 setScrollHeight();
             } else {
-                console.log(page.y);
                 site.settings.currentMain = 1;
                 var scrollerPos = $('#scroller').offset();
                 if(scrollerPos.left < 0) {
                     $('#scroller').animate({left: 0}, 400, function() {
-                        //$(window).scrollTo(page.y, 400, {axis: 'y'});
-                        $(window).stop().animate({ scrollTop: page.y }, 400);
+                        $(window).scrollTo(page.y, 400, {axis: 'y'});
                     });
-
+                    
                 } else {
-                    //$(window).scrollTo(page.y, 400, {axis: 'y'});
-                    $(window).stop().animate({ scrollTop: page.y }, 400);
+                    $(window).scrollTo(page.y, 400, {axis: 'y'});
                 }
                 setScrollHeight();
             }
