@@ -20,11 +20,11 @@ define('FORCE_SSL_ADMIN', true);
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'esser_live');
+define('DB_NAME', 'forge');
 /** MySQL database username */
-define('DB_USER', 'esser_esser');
+define('DB_USER', 'forge');
 /** MySQL database password */
-define('DB_PASSWORD', '6b$88(jsbn3^');
+define('DB_PASSWORD', 'bPty4CskXiTNutgfoPDn');
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 /** Database Charset to use in creating database tables. */
