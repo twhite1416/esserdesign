@@ -168,11 +168,11 @@ var hash = '';
                 if(scrollerPos.left < 0) {
                     $('#scroller').animate({left: 0}, 400, function() {
                         //$(window).scrollTo(page.y, 400, {axis: 'y'});
-                        $('html, body').stop().animate({ top: page.y }, 400);
+                        $('html, body').stop().animate({ scrollTop: page.y+'px' }, 400);
                     });
                 } else {
                     //$(window).scrollTo(page.y, 400, {axis: 'y'});
-                    $('html, body').stop().animate({ top: page.y }, 400);
+                    $('html, body').stop().animate({ scrollTop: page.y+'px' }, 400);
                 }
                 setScrollHeight();
             }
