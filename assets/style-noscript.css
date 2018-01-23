@@ -1,0 +1,27 @@
+
+#hgroup{top:0; height:110px;}
+#hgroup h1{top:26px;}
+#hgroup #navigation{top:40px;}
+#strip{height:12px; top:110px; background:url(/assets/images/chips.gif) 0 0 repeat-x;}
+#container{height:auto;}
+#frame{opacity:1.0;}
+#main{padding-top:110px;}
+.home #main{padding-top:175px;}
+#main2{display:none;}
+h1{font-size:52px;}
+.discipline-list {top:-34px; left:200px;}
+.projects .header {padding:36px 0 0; width:790px !important;}
+.projects-animated-nav ul{display:block; height:85px; width:790px;}
+.projects-animated-nav li{float:left; margin-left:12px; padding-top:39px;}
+.projects-animated-nav a{font-size:12px; font-weight:normal; color:rgb(165,165,165);}
+.projects-animated-nav a:hover{color:rgb(145,145,145); text-decoration:none;}
+.projects .grid {position:relative;}
+.projects .frame, .projects .gallery{height:auto; overflow:auto;}
+.projects .base, .projects .desc{margin:0; height:100px;}
+.projects .desc h2{margin-top:0;}
+.projects .desc{float:none; width:100%;}
+.projects .gallery img{position:relative; margin-bottom:12px; top:auto;}
+.projects .grid .item:hover a.hideable{display:none;}
+.projects .grid .item a{display:block; height:150px; width:150px;}
+#main .projects .grid .item div.img span {color:rgb(168,168,168);}
+.projects .grid .item a:hover{text-decoration:none;}

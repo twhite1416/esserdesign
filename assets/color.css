@@ -1,0 +1,39 @@
+/****************************************|COLOR|****************************************/
+/****
+Mustard: (192,162,4) 		- 1
+Blue: (96,134,159) 			- 2
+Orange: (217,83,30) 		- 3
+Yellow: (238,177,17) 		- 4
+Green: (148,155,80) 		- 5
+Teal: (115,175,182) 		- 6
+Purple: (148,106,141) 		- 7
+Dark Grey: (168,168,168) 	- 8
+Medium Grey: (194,194,194) 	- 9
+Light Grey: (240,240,240) 	- 10
+LightestGrey: (247,247,247) - 11
+White: (255,255,255) 		- 12
+****/
+.b1{background-color:rgb(192,162,4);}
+.b2{background-color:rgb(96,134,159);}
+.b3{background-color:rgb(217,83,30);}
+.b4{background-color:rgb(238,177,17);}
+.b5{background-color:rgb(148,155,80);}
+.b6{background-color:rgb(115,175,182);}
+.b7{background-color:rgb(148,106,141);}
+.b8{background-color:rgb(168,168,168);}
+.b9{background-color:rgb(194,194,194);}
+.b10{}
+.grid div.blank{background-color:#EEE;}
+.b11{background-color:rgb(247,247,247);}
+.b12{background-color:rgb(255,255,255);}
+.c1{color:rgb(192,162,4);}
+.c2{color:rgb(96,134,159);}
+.c3{color:rgb(217,83,30);}
+.c4{color:rgb(238,177,17);}
+.c5{color:rgb(148,155,80);}
+.c6{color:rgb(115,175,182);}
+.c7{color:rgb(148,106,141);}
+.c8{color:rgb(168,168,168);}
+.c9{color:rgb(194,194,194);}
+.c10{color:rgb(240,240,240);}
+.c11{color:rgb(247,247,247);}

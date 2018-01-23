@@ -1,0 +1,36 @@
+/************************************************************************************
+MEDIA QUERY ALTERNATIVE
+--
+710x1024
+************************************************************************************/
+
+/*
+ * It is not clear why the overrides below were originally set in the IE stylesheet. From the comment block above it
+ * would appear that they are specific for small browser windows and not for a particular browser. At any rate, the
+ * styles below cause the site to render improperly in IE so they have been commented out.
+ */
+
+/*
+#hgroup{height:55px;}
+#header h1{top:4px;}
+#navigation{top:16px;}
+#main{padding-top:80px;}
+#main2{padding-top:70px;}
+#header h1 a{background-position:0 -180px;}
+#strip{height:6px;top:55px;background:url(/assets/images/chips.gif) 0 0 repeat-x;}
+.projects-animated-nav li{margin:0 0 0 16px;}
+*/
+
+/* Set the correct styling for the card strip area when displaying in IE */
+#strip {
+    top: 110px;
+    height: 16px;
+    background: url(/assets/images/chips.gif) 0 0 repeat-x;
+}
+
+/* IE 8 does not understand the multiple background graphic definition used for other browsers, feed it a "special" graphic to work around this. */
+#samples .pieceHeader > aside {
+    background: url('/assets/images/divider-grey-ie.png');
+    background-position: 0 105px;
+    background-repeat: repeat-x;
+}
