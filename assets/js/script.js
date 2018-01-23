@@ -163,6 +163,7 @@ var hash = '';
                 });
                 setScrollHeight();
             } else {
+                console.log(page.y);
                 site.settings.currentMain = 1;
                 var scrollerPos = $('#scroller').offset();
                 if(scrollerPos.left < 0) {
