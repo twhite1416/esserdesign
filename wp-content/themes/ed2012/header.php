@@ -15,11 +15,11 @@
 		<?php wp_head(); ?>
         <link rel="shortcut icon" href="/assets/favicon.png" />
         <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-		<!-- <script>!window.jQuery && document.write('<script src="/assets/js/jquery-1.7.min.js"><\/script>')</script> -->
+		<script>!window.jQuery && document.write('<script src="/assets/js/jquery-1.7.min.js"><\/script>')</script>
         <script
-          src="https://code.jquery.com/jquery-1.12.4.min.js"
-          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-          crossorigin="anonymous"></script>
+  src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"
+  integrity="sha256-SOuLUArmo4YXtXONKz+uxIGSKneCJG4x0nVcA0pFzV0="
+  crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="/assets/reset.css" />
 		<link rel="stylesheet" href="/assets/style.css" />
         <noscript>
