@@ -377,18 +377,20 @@ var hash = '';
 
         /**************|PRIVATE METHODS|**************/
         var updateHash = function(uri) {
+            console.log(uri);
             var url = window.location.href;
             var request = url.substr(site.settings.baseURL.length);
-            console.log(url);
-            console.log(request);
             if(request.indexOf('#') == -1) {
                 uri = '/#!' + request;
                 window.location.href = site.settings.baseURL + uri;
+                console.log('1');
             } else {
                 if(window.location.hash != uri) {
                     window.location.hash = uri;
+                    console.log('2');
                     if(!Modernizr.hashchange) {
                         $(window).data('edSite').pageControl();
+                        console.log('3');
                     }
                 }
             }
