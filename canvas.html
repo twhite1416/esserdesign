@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="/wp-content/themes/ed2012/js/cake.min.js?v=1"></script>
+<title>Untitled Document</title>
+<style>
+*{margin:0; padding:0;}
+canvas{border:1px solid #ccc;}
+</style>
+</head>
+
+<body>
+<div id="strip"></div>
+<script>
+	/*
+	window.onload = function() {
+		var ccount=-1,i=0;
+		var colors = new Array('192,162,4','96,134,159','217,83,30','238,177,17','148,155,80','115,175,182','148,106,141');
+		var c = E.canvas(5000, 500)
+		var canvas = new Canvas(c,{
+		  clear:true
+		});
+		canvas.every(10, function() {
+			i++;
+			if(ccount == colors.length-1){
+				ccount = 0;
+			}else{
+				ccount++;	
+			}
+			var rect 	= new Rectangle(10, 20)
+			rect.x 		= i*10;
+			rect.y 		= -(Math.floor(Math.random()*100));
+			rect.fill 	= 'rgb('+colors[ccount]+')'		
+			rect.addFrameListener(function(t) {
+				if(this.y < 100){
+					this.y += 1;
+					this.changed = true
+				}
+			});
+			canvas.append(rect);
+			if(i==100)  canvas.stop();
+		});
+		document.getElementById('strip').appendChild(c);
+	}
+	*/
+	window.onload = function() {
+		var ccount=-1,i=-1;
+		var colors = new Array('192,162,4','96,134,159','217,83,30','238,177,17','148,155,80','115,175,182','148,106,141');
+		var c = E.canvas(1000, 100)
+		var canvas = new Canvas(c,{
+		  clear:true
+		});
+		//collect chips
+		var chipArr = new Array();
+		for(var chipCount=-1; chipCount<(canvas.width/10); chipCount++){
+			if(ccount < colors.length-1){
+				ccount++;
+			}else{
+				ccount = 0;	
+			}
+			var rect 	= new Rectangle(10, 20);
+			rect.x 		= chipCount*10;
+			rect.y 		= -(Math.floor(Math.random()*100));
+			rect.fill 	= 'rgb('+colors[ccount]+')';
+			chipArr.push(rect);
+		}
+		//randomize array
+		chipArr.sort(function(){return Math.round(Math.random());});
+		chipArr.sort(function(){return Math.round(Math.random());});
+		//animate each chip
+		canvas.every(10, function() {
+			if(i < chipArr.length-1) {
+				i++;
+				var rect = chipArr[i];
+				rect.animateTo('y', canvas.height-20, 500);
+				canvas.append(rect);
+			}
+		});
+		Array.prototype.remove = function(from, to) {
+			var rest = this.slice((to || from) + 1 || this.length);
+			this.length = from < 0 ? this.length + from : from;
+			return this.push.apply(this, rest);
+		};
+		document.getElementById('strip').appendChild(c);
+	}
+</script>
+</body>
+</html>
