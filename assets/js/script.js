@@ -79,6 +79,7 @@ var hash = '';
             } else {
                 page.hash = uri;
             }
+            console.log(page.hash);
             page.hasharr = page.hash.split('/');
             page.base = page.href.toString().split('#!/')[1];
             page.id = '#' + page.base;
@@ -377,20 +378,19 @@ var hash = '';
 
         /**************|PRIVATE METHODS|**************/
         var updateHash = function(uri) {
-            console.log(uri);
+
             var url = window.location.href;
             var request = url.substr(site.settings.baseURL.length);
             if(request.indexOf('#') == -1) {
                 uri = '/#!' + request;
                 window.location.href = site.settings.baseURL + uri;
-                console.log(uri);
+            
             } else {
                 if(window.location.hash != uri) {
                     window.location.hash = uri;
-                    console.log('2');
+                    
                     if(!Modernizr.hashchange) {
                         $(window).data('edSite').pageControl();
-                        console.log('3');
                     }
                 }
             }
