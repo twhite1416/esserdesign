@@ -167,10 +167,14 @@ var hash = '';
                 var scrollerPos = $('#scroller').offset();
                 if(scrollerPos.left < 0) {
                     $('#scroller').animate({left: 0}, 400, function() {
-                        $(window).scrollTo(page.y, 400, {axis: 'y'});
+                        setTimeout(function(){
+                            $(window).scrollTo(page.y, 400, {axis: 'y'});
+                        }, 100);
                     });
                 } else {
-                    $(window).scrollTo(page.y, 400, {axis: 'y'});
+                    setTimeout(function(){
+                        $(window).scrollTo(page.y, 400, {axis: 'y'});
+                    }, 100);
                 }
                 setScrollHeight();
             }

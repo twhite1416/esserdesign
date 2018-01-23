@@ -16,7 +16,6 @@
         <link rel="shortcut icon" href="/assets/favicon.png" />
         <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 		<script>!window.jQuery && document.write('<script src="/assets/js/jquery-1.7.min.js"><\/script>')</script>
-        <script src="/assets/js/jquery.localScroll.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="/assets/reset.css" />
 		<link rel="stylesheet" href="/assets/style.css" />
         <noscript>
