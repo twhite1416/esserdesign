@@ -14,8 +14,8 @@
  * @package WordPress
  */
  
-define('WP_HOME','https://esserdesign.com');
-define('WP_SITEURL','https://esserdesign.com');
+define('WP_HOME','http://esserdesign.com');
+define('WP_SITEURL','http://esserdesign.com');
 define('FORCE_SSL_ADMIN', true);
 
 // ** MySQL settings - You can get this info from your web host ** //
