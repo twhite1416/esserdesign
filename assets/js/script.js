@@ -165,12 +165,10 @@ var hash = '';
             } else {
                 site.settings.currentMain = 1;
                 var scrollerPos = $('#scroller').offset();
-                console.log(site);
                 if(scrollerPos.left < 0) {
                     $('#scroller').animate({left: 0}, 400, function() {
                         $(window).scrollTo(page.y, 400, {axis: 'y'});
                     });
-
                 } else {
                     $(window).scrollTo(page.y, 400, {axis: 'y'});
                 }
