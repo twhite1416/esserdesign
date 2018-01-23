@@ -1,0 +1,32 @@
+{
+  "name": "reporting-dashboard",
+  "version": "1.0.0",
+  "description": "Web maintenance reporting dashboard",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Greer",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-minify": "0.0.14",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-size": "^2.1.0",
+    "include-media": "^1.4.9",
+    "jquery-countto": "^1.2.0",
+    "jshint": "^2.9.2",
+    "moment": "^2.17.1",
+    "waypoints": "^4.0.1"
+  }
+}

@@ -1,0 +1,106 @@
+/*
+ * => COLOR VARS & MIXINS
+ * ---------------------------------------------------------------------------*/
+
+$black:         #000;
+$white:         #fff;
+$offwhite:	    #EDEDE8;
+$gray:          #95989A;
+$graydark:      #2D2D2D;
+$green:         #9ACA3C;
+$orange:        #F15E34;
+$lightorange:   #F99D1C;
+$purple:        #903F98;
+$red:           #cc0000;
+$blue:           #04BCE7;
+
+/*
+ * => BOOTSTRAP VARIABLES OVERRIDES
+ * ---------------------------------------------------------------------------*/
+
+$font-size-base:          18px;
+
+$font-myriad: 'myriad-pro', sans-serif;
+$font-myriad-extended: 'myriad-pro-semiextended', sans-serif;
+$font-alternate-gothic: 'alternate-gothic-no-1-d', sans-serif;
+
+$body-font: $font-myriad;
+$body-font-alt: $font-myriad-extended;
+$heading-font: $font-alternate-gothic;
+
+$spacing-lg: 2.7rem;
+$spacing-sm: 2.1rem;
+
+
+/*
+ * => ICON FONT
+ * ---------------------------------------------------------------------------*/
+
+ @font-face {
+   font-family: 'icomoon';
+   src:  url('../fonts/icomoon.eot?6w4j2h');
+   src:  url('../fonts/icomoon.eot?6w4j2h#iefix') format('embedded-opentype'),
+     url('../fonts/icomoon.ttf?6w4j2h') format('truetype'),
+     url('../fonts/icomoon.woff?6w4j2h') format('woff'),
+     url('../fonts/icomoon.svg?6w4j2h#icomoon') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+[class^="icon-"], [class*=" icon-"], .icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quote:before {
+  content: "\e90d";
+}
+.icon-list:before {
+  content: "\e90c";
+}
+.icon-arrow-left:before {
+  content: "\e902";
+}
+.icon-arrow-up:before {
+  content: "\e903";
+}
+.icon-chevron-down:before {
+  content: "\e904";
+}
+.icon-chevron-left:before {
+  content: "\e905";
+}
+.icon-chevron-right:before {
+  content: "\e906";
+}
+.icon-chevron-up:before {
+  content: "\e907";
+}
+.icon-close:before {
+  content: "\e908";
+}
+.icon-eye:before {
+  content: "\e909";
+}
+.icon-feature:before {
+  content: "\e90a";
+}
+.icon-hamburger:before {
+  content: "\e90b";
+}
+.icon-arrow-right:before {
+  content: "\e900";
+}
+.icon-filter:before {
+  content: "\e901";
+}

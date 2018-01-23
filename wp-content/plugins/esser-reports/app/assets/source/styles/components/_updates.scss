@@ -1,0 +1,103 @@
+/*
+ * 
+ *	UPDATES
+ *
+ ----------------------------------------------------------------------------- */
+
+.updates {
+	p {
+		margin: 0;
+	}
+
+	.btn {
+		border-color: $green;
+		color: $green;
+		margin-top: 1.5rem;
+		display: inline-block;
+
+		&:hover {
+			background-color: $green;
+			color: $white;
+		}
+	}
+}
+
+.wordpress-updates {
+
+	@include media('>tablet') {
+		border-right: 1px solid $offwhite;
+	}
+
+	span {
+		display: block;
+	}
+
+	svg {
+		margin-bottom: 1rem;
+	}
+}
+
+.plugin-updates {
+
+	@include media('>tablet') {
+		border-left: 1px solid $offwhite;
+	}
+
+	span {
+		display: block;
+	}
+
+	svg {
+		margin-bottom: 1.7rem;
+	}
+
+	.see-more {
+		margin: 1.5rem auto 0;
+		font-style: italic;
+		max-width: 16rem;
+	}
+}
+
+.wordpress-updates,
+.plugin-updates {
+	text-align: center;
+	padding: 2rem 0;
+
+	@include media('>tablet') {
+	  padding: 3rem 0;
+	}
+
+	h3 {
+		margin-bottom: 0.5rem;
+	}
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.animate #wordpress {
+
+	circle {
+		stroke: $green;
+	  stroke-dasharray: 1000;
+	  stroke-dashoffset: 1000;
+	  animation: dash 2s linear forwards;
+	}
+}
+
+#wordpress .logo {
+	fill: $green;
+}
+
+.animate #plugins {
+
+	.line {
+		stroke: $green;
+	  stroke-dasharray: 1000;
+	  stroke-dashoffset: 1000;
+	  animation: dash 2s linear forwards;
+	}
+}

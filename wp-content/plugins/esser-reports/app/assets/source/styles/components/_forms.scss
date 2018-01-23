@@ -1,0 +1,113 @@
+// Search form
+// .search-form {
+//   @extend .form-inline;
+// }
+// .search-form label {
+//   font-weight: normal;
+//   @extend .form-group;
+// }
+// .search-form .search-field {
+//   @extend .form-control;
+// }
+// .search-form .search-submit {
+//   @extend .btn;
+//   @extend .btn-default;
+// }
+
+.form-control {
+	border: 2px solid $gray;
+  padding: 0.5rem 1rem;
+
+  &:focus {
+  	border: 2px solid $lightorange;
+  	outline: none;
+  }
+
+  &[type=button] {
+		@include font-size(1.35);
+		background-color: transparent;
+		border: 2px solid $lightorange;
+		color: $lightorange;
+		text-transform: lowercase;
+		background-image: url(../images/submit-icon-down.svg);
+		background-repeat: no-repeat;
+		background-position: 100%;
+		background-size: 40px;
+		padding-right: 9rem;
+
+		&:hover {
+			background-color: $lightorange;
+			color: $white;
+			background-position: calc(100% - 20px);
+		}
+  }
+
+  &textarea {
+		height: auto;
+		min-height: 8rem;
+  }
+}
+
+.form-label {
+	@include font-size(1.35);
+	display: inline-block;
+	font-weight: 400;
+	margin-bottom: 0.2rem;
+	text-transform: lowercase;
+}
+
+
+/*
+ * 
+ *	NINJA FORMS
+ *
+ ----------------------------------------------------------------------------- */
+
+
+.nf-form-wrap {
+
+	.nf-field-container {
+		margin-bottom: 1.5rem;
+	}
+
+	.ninja-forms-field {
+		@extend .form-control;
+	}
+
+	.nf-field-label {
+
+		label {
+			@extend .form-label;
+		}
+	}
+
+	.label-above {
+
+		.nf-field-label {
+			margin-bottom: 0;
+		}
+	}
+
+	.nf-field-element textarea {
+		height: auto;
+		min-height: 6rem;
+	}
+
+	.nf-form-fields-required {
+		display: none;
+	}
+}
+
+
+// Errors
+
+.nf-form-wrap {
+
+	.nf-error .ninja-forms-field {
+		border: 2px solid $red;
+	}
+
+	.nf-error-msg {
+		color: $red;
+	}
+}

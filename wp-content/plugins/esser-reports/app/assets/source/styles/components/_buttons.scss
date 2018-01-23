@@ -1,0 +1,22 @@
+.btn {
+	border: 2px solid $blue;
+	color: $blue;
+	padding: 0.3rem 2rem 0.3rem 0.6rem;
+	position: relative;
+	text-transform: lowercase;
+	font-weight: 400;
+	white-space: nowrap;
+
+	&:after {
+		@extend .icon;
+		content: "\e906";
+		position: absolute;
+		right: 0;
+		top: 10px;
+	}
+
+	&:hover {
+		background-color: $blue;
+		color: $white;
+	}
+}

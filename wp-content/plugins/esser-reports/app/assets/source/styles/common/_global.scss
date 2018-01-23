@@ -1,0 +1,161 @@
+/*
+ * => GLOBAL ELEMENTS STYLES
+ * ---------------------------------------------------------------------------*/
+
+html {
+  font-size: $font-size-base;
+  -ms-text-size-adjust: $font-size-base;
+}
+
+a {
+  text-decoration: none;
+  @include noFOUT();
+  font-weight: 700;
+  color: $blue;
+}
+p {
+  margin: 1.35rem 0 2.7rem;
+  @include noFOUT();
+}
+hr {}
+
+body {
+  @include font-size(1);
+  font-family: $body-font;
+  line-height: 1.6;
+
+  @include media('<=phonewide') {
+    @include font-size(0.9);
+  }
+}
+
+.heading {
+  font-family: $heading-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @extend .heading;
+  margin: 1rem 0;
+  @include noFOUT();
+}
+
+h1, .h1 { @include font-size(3.1); }
+h2, .h2 { @include font-size(2.1); }
+h3, .h3 { @include font-size(2.3); }
+h4, .h4 { @include font-size(1.5); }
+h5, .h5 { @include font-size(1);   }
+h6, .h6 { @include font-size(0.8); }
+
+// h1, .h1 { @include font-size(2.3); }
+// h2, .h2 { @include font-size(1.66); }
+// h3, .h3 { @include font-size(1.1); }
+// h4, .h4 { @include font-size(0.9); } 
+// h5, .h5 { @include font-size(0.7); }
+// h6, .h6 { @include font-size(0.5); }
+
+// @include media('>phone') {
+//   h1, .h1 { @include font-size(2.3); } 
+  
+//   h3, .h3 { @include font-size(1.4); }
+//   h4, .h4 { @include font-size(1.2); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>phonewide') {
+//   h1, .h1 { @include font-size(2.5); }
+  
+//   h3, .h3 { @include font-size(1.8); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>tablet') {
+//   h1, .h1 { @include font-size(2.8); }
+  
+//   h3, .h3 { @include font-size(1.8); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>tabletwide') {
+
+//   h2, .h2 { @include font-size(2.1); }
+//   h3, .h3 { @include font-size(1.94); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>laptopsmall') {
+
+
+//   h3, .h3 { @include font-size(2.3); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>laptop') {
+//   h1, .h1 { @include font-size(3.1); }
+  
+//   h3, .h3 { @include font-size(2.3); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>laptopwide') {
+//   h1, .h1 { @include font-size(3.7); }
+
+//   h3, .h3 { @include font-size(2.3); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+// @include media('>desktop') {
+
+//   h2, .h2 { @include font-size(2.22); }
+//   h3, .h3 { @include font-size(2.3); }
+//   h4, .h4 { @include font-size(1.5); }
+//   h5, .h5 { @include font-size(1);   }
+//   h6, .h6 { @include font-size(0.8); }
+// }
+
+img {
+  max-width: 100%;
+}
+
+/*
+ * => COLOR BODY CLASSES
+ * ---------------------------------------------------------------------------*/
+
+ body {
+  &.orange {
+    @include accent-color(#F15E34);
+  }
+
+  &.green {
+    @include accent-color(#9ACA3C);
+  }
+
+  &.purple {
+    @include accent-color(#903F98);
+  }
+
+  &.light-orange {
+    @include accent-color(#F99D1C);
+  }
+ }

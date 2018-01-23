@@ -1,0 +1,278 @@
+/*
+ * 
+ *	GENERAL
+ *
+ ----------------------------------------------------------------------------- */
+
+.page-section.intro {
+	text-align: center;
+	margin: 6rem 0;
+
+	h2 {
+		margin-bottom: 0;
+		color: $blue;
+	}
+
+	h1 {
+		margin-top: 0;
+		color: $blue;
+	}
+}
+
+.accordion {
+
+	&.closed {
+		margin-bottom: 0.3rem;
+
+		.accordion-header .container:after {
+			color: $offwhite;
+		}
+
+		.accordion-content {
+			display: none;
+		}
+	}
+
+	&.open {
+
+		.accordion-header .container:after {
+			transform: rotate(-90deg);
+		}
+	}
+
+	.accordion-header {
+		background-color: $offwhite;
+		padding: 2rem 0;
+		cursor: pointer;
+		transition: all 200ms;
+		
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+
+			&:after {
+				@extend .icon;
+
+				@include media('>tablet') {
+					align-items: center;
+					background-color: $white;
+					border-radius: 3.8rem;
+					color: $offwhite;
+					content: "\e900";
+					display: flex;
+					font-size: 2.8rem;
+					height: 3.8rem;
+					justify-content: center;
+					margin-left: auto;
+					transform: rotate(90deg);
+					transition: transform 200ms;
+					width: 3.8rem;
+				}
+			}
+		}
+
+		h2 {
+			margin: 0.5rem 0 0 0;
+			@include font-size(2.5);
+
+			@include media('>tablet') {
+				@include font-size(3);
+				margin: 0.5rem 2.5rem 0 0;
+			}
+		}
+
+		p {
+			margin: 1rem 0 0 0;
+
+			@include media('>tablet') {
+				margin: 0;
+			}
+		}
+	}
+
+	.badge {
+		align-items: center;
+		background-color: $white;
+		border-radius: 100%;
+		color: $offwhite;
+		display: flex;
+		font-family: $heading-font;
+		height: 3.4rem;
+		justify-content: center;
+		margin-right: 1rem;
+		width: 3.4rem;
+
+		@include media('>tablet') {
+			height: 3.9rem;
+			width: 3.9rem;
+			margin-right: 1.5rem;
+		}
+
+		span {
+			@include font-size(2.5);
+			padding-top: 0.5rem;
+	    line-height: 2.5rem;
+
+	    @include media('>tablet') {
+	    	@include font-size(3);
+	    	line-height: 3rem;
+	    }
+		}
+	}
+
+	p.description {
+		font-style: italic;
+
+		@include media('>tablet') {
+			flex: 1;
+			margin-right: 1.5rem;
+		}
+	}
+}
+
+.updates.accordion {
+
+	.accordion-header {
+
+		h2 {
+			color: $green;
+		}
+	}
+
+	&.open,
+	&:hover {
+
+		.accordion-header {
+			background-color: $green;
+			color: $white;
+
+			h2 {
+				color: $white;
+			}
+
+			.badge {
+				color: $green;
+			}
+
+			.container:after {
+				color: $green;
+			}
+		}
+	}
+}
+
+.testing.accordion {
+
+	.accordion-header {
+
+		h2 {
+			color: $lightorange;
+		}
+	}
+
+	&.open,
+	&:hover {
+
+		.accordion-header {
+			background-color: $lightorange;
+			color: $white;
+
+			h2 {
+				color: $white;
+			}
+
+			.badge {
+				color: $lightorange;
+			}
+
+			.container:after {
+				color: $lightorange;
+			}
+		}
+	}
+}
+
+.plugins.accordion {
+
+	.accordion-header {
+
+		h2 {
+			color: $orange;
+		}
+	}
+
+	&.open,
+	&:hover {
+
+		.accordion-header {
+			background-color: $orange;
+			color: $white;
+
+			h2 {
+				color: $white;
+			}
+
+			.badge {
+				color: $orange;
+			}
+
+			.container:after {
+				color: $orange;
+			}
+		}
+	}
+}
+
+.notifications.accordion {
+
+	.accordion-header {
+
+		h2 {
+			color: $purple;
+		}
+	}
+
+	&.open,
+	&:hover {
+
+		.accordion-header {
+			background-color: $purple;
+			color: $white;
+
+			h2 {
+				color: $white;
+			}
+
+			.badge {
+				color: $purple;
+			}
+
+			.container:after {
+				color: $purple;
+			}
+		}
+	}
+}
+
+.highlight-section {
+	background-color: $offwhite;
+	padding: 2rem 0;
+	text-align: center;
+
+	h3 {
+		margin-top: 0;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		margin: 0 auto;
+		max-width: 27rem;
+	}
+
+	.col-2 + .col-2 {
+		@include media('<=tablet') {
+			margin-top: 1.5rem;
+		}
+	}
+}

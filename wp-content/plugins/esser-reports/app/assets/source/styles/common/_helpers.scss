@@ -1,0 +1,78 @@
+/*
+ * => COLOR VARS & MIXINS
+ * ---------------------------------------------------------------------------*/
+
+$black:   #000;
+$white:   #fff;
+$gray:    #95989A;
+$green:   #9ACA3C;
+
+
+/*
+ * => BOOTSTRAP VARIABLES OVERRIDES
+ * ---------------------------------------------------------------------------*/
+
+$font-size-base:          18px;
+
+.flex {
+	display: flex;
+}
+
+.vertical-align {
+	align-items: center;
+}
+
+.compact {
+	margin: 0;
+}
+
+.gutter-bottom-3 {
+	margin-bottom: 1.2rem;
+
+	@include media('>tablet') {
+		margin-bottom: 2rem;
+	}
+
+	@include media('>laptopsmall') {
+		margin-bottom: 1.2rem;
+	}
+
+	@include media('>laptopwide') {
+		margin-bottom: 2rem;
+	}
+}
+
+.gutter-bottom-4 {
+	margin-bottom: 1.2rem;
+
+	@include media('>tablet') {
+		margin-bottom: 2rem;
+	}
+
+	@include media('>laptopsmall') {
+		margin-bottom: 1.2rem;
+	}
+
+	@include media('>laptopwide') {
+		margin-bottom: 2rem;
+	}
+}
+
+.link-spanner {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
