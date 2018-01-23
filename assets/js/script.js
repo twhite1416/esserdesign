@@ -383,7 +383,7 @@ var hash = '';
             if(request.indexOf('#') == -1) {
                 uri = '/#!' + request;
                 window.location.href = site.settings.baseURL + uri;
-                console.log('1');
+                console.log(uri);
             } else {
                 if(window.location.hash != uri) {
                     window.location.hash = uri;
