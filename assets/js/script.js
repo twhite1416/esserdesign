@@ -379,6 +379,8 @@ var hash = '';
         var updateHash = function(uri) {
             var url = window.location.href;
             var request = url.substr(site.settings.baseURL.length);
+            console.log(url);
+            console.log(request);
             if(request.indexOf('#') == -1) {
                 uri = '/#!' + request;
                 window.location.href = site.settings.baseURL + uri;
