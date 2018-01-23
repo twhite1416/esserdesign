@@ -141,25 +141,26 @@ var hash = '';
             } else if(page.main == 2) {
                 site.settings.currentMain = 2;
                 $('#scroller').animate({left: -($(window).width())}, 400, function() {
-                    $(window).scrollTo(page.y, 400, {
-                        axis: 'y',
-                        onAfter: function() {
-                            // ** This needs to stay commented. It's for the old style of displaying project
-                            //    details. It is no longer used, but I don't want to lose the code since we don't
-                            //    have source control.
-                            //    Joel Flint 03/05/2013
-                            //IF YOU HAVE A PROJECT ID USE IT
-                            /*
-                             if(page.hasharr[2]){
-                             $('#projects-'+page.hasharr[1]).data('projectGrid').show(page.hasharr[2]);
-                             }
-                             //IF THE PREVIOUS PAGE WAS THE PARENT PROJECT CATEGORY - JUST CLOSE THE GALLERY
-                             if(site.settings.page.hasharr[2] == undefined && site.settings.page.hasharr[1] == page.hasharr[1]){
-                             $('#projects-'+page.hasharr[1]).data('projectGrid').hide();
-                             }
-                             */
-                        }
-                    });
+                    $('html, body').stop().animate({ scrollTop: page.y+'px' }, 400);
+                    // $(window).scrollTo(page.y, 400, {
+                    //     axis: 'y',
+                    //     onAfter: function() {
+                    //         // ** This needs to stay commented. It's for the old style of displaying project
+                    //         //    details. It is no longer used, but I don't want to lose the code since we don't
+                    //         //    have source control.
+                    //         //    Joel Flint 03/05/2013
+                    //         //IF YOU HAVE A PROJECT ID USE IT
+                            
+                    //          if(page.hasharr[2]){
+                    //          $('#projects-'+page.hasharr[1]).data('projectGrid').show(page.hasharr[2]);
+                    //          }
+                    //          //IF THE PREVIOUS PAGE WAS THE PARENT PROJECT CATEGORY - JUST CLOSE THE GALLERY
+                    //          if(site.settings.page.hasharr[2] == undefined && site.settings.page.hasharr[1] == page.hasharr[1]){
+                    //          $('#projects-'+page.hasharr[1]).data('projectGrid').hide();
+                    //          }
+                             
+                    //     }
+                    // });
                 });
                 setScrollHeight();
             } else {
