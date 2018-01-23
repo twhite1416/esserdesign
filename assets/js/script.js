@@ -12,7 +12,7 @@ var hash = '';
 (function($) {
     $.edSite = function(element, options) {
         var defaults = {
-            baseURL: "https://" + window.location.host,
+            baseURL: "http://" + window.location.host,
             assetsURL: '/assets',
             page: {},
             mainHeight: 0,
