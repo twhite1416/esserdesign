@@ -12,7 +12,7 @@ var hash = '';
 (function($) {
     $.edSite = function(element, options) {
         var defaults = {
-            baseURL: "http://" + window.location.host,
+            baseURL: "https://" + window.location.host,
             assetsURL: '/assets',
             page: {},
             mainHeight: 0,
@@ -40,7 +40,7 @@ var hash = '';
             //Make primary nav hashable
             $('#navigation a').each(function() {
                 var static_url = $(this).attr('href');
-                if(static_url.indexOf('http') == -1) {
+                if(static_url.indexOf('https') == -1) {
                     $(this).attr('href', '#!/' + static_url.substr(1));
                 }
             });
