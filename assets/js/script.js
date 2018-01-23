@@ -79,7 +79,7 @@ var hash = '';
             } else {
                 page.hash = uri;
             }
-            console.log(page.hash);
+
             page.hasharr = page.hash.split('/');
             page.base = page.href.toString().split('#!/')[1];
             page.id = '#' + page.base;
@@ -124,6 +124,8 @@ var hash = '';
 
             // Always hide the samples navigation if we navigate to any other section
             if(page.main != 3) $('#samples > header,#samples > .pieceHeader').fadeOut(300);
+
+            console.log(page.main);
 
             if(page.main == 3) {
                 if(site.settings.currentMain != 3) {
